@@ -1,0 +1,95 @@
+html {
+  height: 100%;
+  width: 100%;
+ 
+}
+
+
+
+:root {
+  --line-border-fill: black;
+  --line-border-empty: red;
+}
+
+
+.main-cantainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+}
+
+.progress::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  height: 4px;
+  background-color: red;
+  width: 100%;
+}
+
+
+.cantainer {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 300px;
+  justify-content: space-between;
+
+}
+
+
+.cantainer1 {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 300px;
+  justify-content: space-between;
+
+}
+
+
+.circle {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  color: #040b08;
+  background-color: #33b9e6;
+  border: 3px solid var(--line-border-empty);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle.active {
+  border: 3px solid var(--line-border-fill);
+}
+
+.button {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-top: 30px;
+  transform: translateX(-50%);
+}
+
+.btn {
+  background-color: #5cb6c1;
+  font-size: 25px;
+  border-radius: 20%;
+
+}
+
+.btn:hover {
+  box-shadow: 2px 3px 5px black;
+
+}
